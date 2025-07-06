@@ -1,5 +1,3 @@
-"use client";
-
 import ImageSlideshow from "@/components/images/image-slideshow";
 import cssClasses from "./page.module.css";
 import Link from "next/link";
