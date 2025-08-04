@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 
 export default async function DetailsPage({ params }) {
   const { mealDetailsSlug } = await params;
-  const meal = getMeal(mealDetailsSlug);
+  const meal = await getMeal(mealDetailsSlug);
 
   if (!meal) {
     notFound();
