@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.859.0",
+    "aws-amplify": "^6.15.4",
     "better-sqlite3": "^12.2.0",
     "next": "15.3.5",
     "react": "^19.0.0",
@@ -18,8 +19,15 @@
     "xss": "^1.0.15"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.16.1",
+    "@aws-amplify/backend-cli": "^1.8.0",
     "@eslint/eslintrc": "^3",
+    "aws-cdk-lib": "^2.204.0",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.8",
     "eslint": "^9",
-    "eslint-config-next": "15.3.5"
+    "eslint-config-next": "15.3.5",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
   }
 }

@@ -2,9 +2,11 @@ import { getMeal } from "@/lib/meals";
 import cssClasses from "./page.module.css";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 export default async function DetailsPage({ params }) {
   const { mealDetailsSlug } = await params;
+  console.log("mealDetailsSlug", mealDetailsSlug);
   const meal = await getMeal(mealDetailsSlug);
 
   if (!meal) {
@@ -14,7 +16,7 @@ export default async function DetailsPage({ params }) {
   meal.instructions = meal.instructions.replace(/\n/g, "<br />");
 
   return (
-    <>
+    <Suspense fallback={<p className={cssClasses.loading}>Loading Meal...</p>}>
       <header className={cssClasses.header}>
         <div className={cssClasses.image}>
           <Image
@@ -39,6 +41,6 @@ export default async function DetailsPage({ params }) {
           }}
         ></p>
       </main>
-    </>
+    </Suspense>
   );
 }
