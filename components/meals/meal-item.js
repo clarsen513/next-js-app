@@ -9,7 +9,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
       <header>
         <div className={classes["image-container"]}>
           <Image
-            src={image}
+            src={`https://carter-larsen-next-js-app-bucket.s3.us-east-1.amazonaws.com/${image}`}
             alt={title}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

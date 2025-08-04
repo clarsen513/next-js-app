@@ -17,7 +17,11 @@ export default async function DetailsPage({ params }) {
     <>
       <header className={cssClasses.header}>
         <div className={cssClasses.image}>
-          <Image src={meal.image} alt={meal.title} fill />
+          <Image
+            src={`https://carter-larsen-next-js-app-bucket.s3.us-east-1.amazonaws.com/${meal.image}`}
+            alt={meal.title}
+            fill
+          />
         </div>
         <div className={cssClasses["header-text"]}>
           <h1>{meal.title}</h1>
