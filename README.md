@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a simple application for publishing and looking at recipes. The images are stored in an S3 bucket and the data is stored on DynamoDB. The app is built for deployment on AWS Amplify.
 
-## Getting Started
 
-First, run the development server:
+Here is the home page:
+<img width="1439" height="720" alt="Screenshot 2025-08-05 at 4 45 57 PM" src="https://github.com/user-attachments/assets/e6be529a-bf29-42ae-9f49-17c278a22a8e" />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The meals page where meals have been shared by other users:
+<img width="1440" height="721" alt="Screenshot 2025-08-05 at 4 54 57 PM" src="https://github.com/user-attachments/assets/2dfa53c3-634a-4606-a27a-d83cbf0395b8" />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The details for a specific meal:
+<img width="1440" height="722" alt="Screenshot 2025-08-05 at 4 55 11 PM" src="https://github.com/user-attachments/assets/694f66d1-2c33-44d5-9cf5-903cf40db723" />
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The form for sharing a meal:
+<img width="1439" height="720" alt="Screenshot 2025-08-05 at 4 57 04 PM" src="https://github.com/user-attachments/assets/6e9690c0-e9c7-4869-9fab-c472a723a293" />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The community details page:
+<img width="1440" height="721" alt="Screenshot 2025-08-05 at 4 46 15 PM" src="https://github.com/user-attachments/assets/13c45a1d-1b0f-43ce-8133-f1099c043335" />
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This application was inspired by an application created during a React course on Udemy by Academind.
